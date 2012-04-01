@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Touch Mobile &amp; Tablet Template</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;"  />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head> 
+	<body> 
+		<div data-role="page" class="page blog-post">
+			<div data-role="header">
+				<a href="blog-posts.html" data-icon="arrow-l" data-direction="reverse">Back</a>
+				<a href="index.html" data-icon="home" data-direction="reverse">Home</a>
+				<h1>BLOG POST</h1>
+			</div><!--/header-->
+
+			<div data-role="content">
+				<h2>Duis autem vel eum iriure dolor in hendrerit in vulputate.</h2>
+				<p><em>Posted 27th Dec 2011 by Author</em></p>			
+				<p><span class="dropcaps">L</span>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<div class = "blog-post-image"><img src=" img/thumb.jpg" alt="blog image" /></div>
+				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>		
+				<p class ="blockquote">"Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat."	
+				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem</p>
+				
+				<div data-role="collapsible" data-content-theme="c" data-theme="a">
+				   <h3>View Comments</h3>
+				   		<ul class="blog-comments">
+					   	 	<li>
+						   		<img src="img/user.jpg" alt="user" />
+						   		<div class = "comment">
+									<h3>John Smith</h3>
+						   	 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+						   	 		<span class="blog-comment-date">12.45pm 28th Dec 2011</span>
+						  	  		<a href="#">Reply &rarr;</a>
+								</div>
+					   	 	</li>
+							
+							<hr/>
+							
+					   	 	<li>
+						   		<img src="img/user.jpg" alt="user" />
+						   		<div class = "comment">
+									<h3>John Smith</h3>
+						   	 		<p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+						   	 		<span class="blog-comment-date">5.45pm 28th Dec 2011</span>
+						  	  		<a href="#">Reply &rarr;</a>
+								</div>
+					   	 	</li>
+							
+							<hr/>
+							
+					   	 	<li>
+						   		<img src="img/user.jpg" alt="user" />
+						   		<div class = "comment">
+									<h3>Jane Smith</h3>
+						   	 		<p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+						   	 		<span class="blog-comment-date">12.49pm 29th Dec 2011</span>
+						  	  		<a href="#">Reply &rarr;</a>
+								</div>
+					   	 	</li>								
+						</ul>
+				</div>
+				
+				<div data-role="collapsible" data-content-theme="c" data-theme="a" id="comment-form-collapsible">
+					<h3>Leave Comment</h3>
+					<div id="comment-form-wrapper">
+						<form action="#" method="post" id="comment-form">
+							<div data-role="fieldcontain" class="ui-hide-label no-field-separator">
+								<label for="name">Name (required)</label>
+							    <input type="text" id="name" name="name" placeholder="Name (required)" class="required" />
+							</div>
+							<div data-role="fieldcontain" class="ui-hide-label no-field-separator">	
+								<label for="email">Email (optional)</label>
+							    <input type="email" id="email" name="email" placeholder="Email (optional)" class="email"/>
+							</div>
+							<div data-role="fieldcontain" class="ui-hide-label no-field-separator">	
+								<label for="comment">Comment (required)</label>
+								<textarea name="textarea" id="comment" placeholder="Leave your comment here" class="required"></textarea>
+							</div>
+								<button type="submit" id="submit">Submit Comment</button>
+						</form>
+					</div>
+					<div id="comment-form-success"></div>
+				</div>	
+			</div><!-- /content -->
+		</div><!-- /page -->
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Touch Mobile &amp; Tablet Template</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;"  />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body> 
+		<div data-role="page" class="page">
+			<div data-role="header">
+				<a href="list-index.html"  data-icon="arrow-l" data-direction="reverse">Back</a>
+				<a href="index.html" data-icon="home" data-direction="reverse">Home</a>
+				<h1>Inset List</h1>
+			</div><!--/header-->
+			<div data-role="content">
+				<ul data-role="listview" data-theme="a" data-inset="true" data-split-theme="d">
+					<li data-role="list-divider">I am an inset list with share button</li>
+					<li><a href="#">
+							<img src="img/gallery/thumb/holiday/01.jpg" alt="holiday"/>
+							<h5>Lorem</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt urna.</p>
+						</a>
+						<a href="share-item.html" data-rel="dialog" data-transition="slidedown" title="share" data-icon="gear" ></a>
+					</li>
+					<li><a href="#">
+							<img src="img/gallery/thumb/holiday/02.jpg" alt="holiday"/>
+							<h1>Ipsum</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt urna.</p>
+						</a>
+						<a href="share-item.html" data-rel="dialog" data-transition="slidedown" title="share" data-icon="gear" ></a>
+					</li>
+					<li><a href="#">
+							<img src="img/gallery/thumb/holiday/03.jpg" alt="holiday"/>
+							<h1>Dolor</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt urna.</p>
+						</a>
+						<a href="share-item.html" data-rel="dialog" data-transition="slidedown" title="share" data-icon="gear" ></a>
+					</li>
+					<li><a href="#">
+							<img src="img/gallery/thumb/holiday/04.jpg" alt="holiday"/>
+							<h1>Sit Amet</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt urna.</p>
+						</a>
+						<a href="share-item.html" data-rel="dialog" data-transition="slidedown" title="share" data-icon="gear" ></a>
+					</li>
+			
+				</ul>
+		
+				<ul data-role="listview" data-theme="a" data-inset="true">
+					<li><a href="#">
+							<h1>Inset List with no divider</h1>
+						</a>
+					</li>
+					<li><a href="#">
+							<h1>This is perfect for a menu!</h1>
+						</a>
+					</li>
+					<li><a href="#">
+							<h1>Add a sub-heading</h1>
+							<p>Just like this!</p> 
+						</a>
+					</li>
+					<li><a href="#">
+							<h1>Styling it is easy!</h1>
+						</a>
+					</li>
+					<li><a href="#">
+							<h1>e.g. Here is a count</h1>
+							<span class="ui-li-count">8</span>
+						</a>
+					</li>		
+				</ul>
+		
+			</div><!-- /content -->
+		</div><!-- /page -->
+	</body>
+</html>

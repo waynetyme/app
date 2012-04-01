@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Touch Mobile &amp; Tablet Template</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;"  />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body> 
+		<div data-role="page" class="page" id="location2">
+			<div data-role="header">
+				<a href="index.html" data-icon="arrow-l" data-direction="reverse">Back</a>
+				<a href="index.html" data-icon="home" data-direction="reverse">Home</a>
+				<h1>Location &amp; Contact</h1>
+
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="location1.html"  data-icon="home" data-transition="none" data-prefetch>Location 1</a></li>
+						<li><a href="location2.html" class="ui-btn-active " data-icon="home">Location 2</a></li>
+						<li><a href="location3.html" data-icon="home" data-transition="none" data-prefetch>Location 3</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!--/header-->
+			
+			<div data-role="content" class="location-content">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="tel:(610)1111111" data-role="button" data-inline="true" data-theme="b">Phone Us</a>
+				<a href="http://maps.google.com/maps?daddr=19608,PA" data-role="button" data-inline="true" data-theme="b">View Map</a>
+			</div><!-- /controlgroup buttons-->
+			<div class="address">
+				<h3>Touch Mobile &amp; Tablet</h3>
+				<p>Columbia Ave.</p>
+				<p>Shillington</p>
+				<p>PA 19607</p>
+			</div>
+				<a href="http://maps.google.com/maps?daddr=19608,PA" id="map">
+					<img src="http://maps.googleapis.com/maps/api/staticmap?center=19608,PA&zoom=14&size=200x200&sensor=false&markers=19608,PA"/>
+				</a>
+				<p>
+					<strong>Phone: </strong><a href="tel:6101111111">(610) 111-1111</a><br>
+					<strong>Email: </strong><a href="mailto:touch@mobile-tablet.com">touch@mobile-tablet.com</a>
+				</p>
+		
+				<div data-role="collapsible" data-theme="a" data-content-theme="c">
+					<h3>Send Us A Message</h3>
+					<div id="contact-form-wrapper">
+						<form action="#" method="post" id="contact-form">
+							<div data-role="fieldcontain" class="ui-hide-label no-field-separator">
+								<label for="name">Name*</label>
+							    <input type="text" id="name" name="name" placeholder="Name*" class="required" />
+							</div>
+							<div data-role="fieldcontain" class="ui-hide-label no-field-separator">	
+								<label for="email">Email*</label>
+							    <input type="email" id="email" name="email" placeholder="Email*" class="email required"/>
+							</div>
+							<div data-role="fieldcontain" class="ui-hide-label no-field-separator">	
+								<label for="message">Message*</label>
+								<textarea name="textarea" id="message" placeholder="Your message*" class="required"></textarea>
+							</div>
+								<button type="submit" id="submit" data-theme="a">Send Message</button>
+						</form>
+					</div>
+					<div id="contact-form-success"></div>
+				</div>		
+			</div><!-- /content -->
+		</div><!-- /page -->
+	</body>
+</html>
